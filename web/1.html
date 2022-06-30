@@ -3,32 +3,82 @@
 <head>
   <title>WEB1 - html</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- <style>
+  body{
+    margin:0;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  h1{
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    border-bottom: 1px solid gray;
+    margin: 0px;
+    padding: 20px;
+  }
+  ol{
+    border-right: 1px solid black;
+    width: 100px;
+    margin: 0px;
+    padding: 20px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left: 30px;
+  }
+  #grid #article{
+    padding-left: 25px;
+  }
+  @media (max-width:600px) {
+    #grid{
+      display: block;
+    }
+    ol{
+      border-right:none;
+    }
+    h1{
+      border-bottom: none;
+    }
+  }
+</style> -->
 <body>
-  <input type="checkbox">
+  <!-- <input type="checkbox"> -->
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <b>ol</b>:ordered list<br>
-    <li><a href="1.html">html</a></li>
-    <li><a href="2.html">css</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <ul>
-    <b>ul</b>:unordered list<br>
-    <li>1.html</li>
-    <li>2.css</li>
-    <li>3.JavaScript</li>
-  </ul>
+  <div id="grid">
+    <ol>
+      <b>ol</b>:ordered list<br>
+      <li><a href="1.html">html</a></li>
+      <li><a href="2.html">css</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <!-- <ul>
+      <b>ul</b>:unordered list<br>
+      <li>1.html</li>
+      <li>2.css</li>
+      <li>3.JavaScript</li>
+    </ul> -->
+    <div id = "article">
+      <h2>HTML이란 무엇인가?</h2>
+      <p><a href = "https://html.spec.whatwg.org/multipage/"
+        target="_blank" title = "html5 specification">Hypertext Markup Language(HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+      Web browsers receive HTML documents from a web serverWeb browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+      <img src="coding.jpg" width="100%">
+      <p style="margin-top:40px">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+      </p>
+    </div>
 
-  <h2>HTML이란 무엇인가?</h2>
-  <p><a href = "https://html.spec.whatwg.org/multipage/"
-    target="_blank" title = "html5 specification">Hypertext Markup Language(HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
-  Web browsers receive HTML documents from a web serverWeb browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
-  <img src="coding.jpg" width="100%">
-  <p style="margin-top:40px">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-    </p>
-  <span style ="font-size:20px">coding</span>
+  </div>
+
+  <!-- <span style ="font-size:20px">coding</span>
   <h3>coding</h3>
   <p>test</p>
   <ul>
@@ -61,9 +111,9 @@
       <td>html</td>
       <td>97.9%</td>
     </tr>
-  </table>
+  </table> -->
   <p>
-
+    <span><B>댓글기능</B></span>
     <div id="disqus_thread"></div>
     <script>
       /**
